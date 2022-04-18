@@ -1,0 +1,28 @@
+#Input
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first and only line of each test case contains a single integer N
+
+#Output
+For each test case, print a single line containing one integer - the minimum price I have to pay.
+
+#Solution
+# cook your dish here
+m = int(input())
+
+for k in range(m):
+    num = int(input())
+    L = []
+    for i in str(num):
+      L.append(i)
+    l = []
+    
+    for i in range(len(L)):
+      op = ''
+    
+      for j in range(len(L)):
+        if j!=i:
+          op+=L[j]
+    
+      l.append(int(op))
+    
+    print(min(l))
